@@ -1,0 +1,31 @@
+/* =============
+    process
+============= */
+@use "../helpers";
+
+#process{
+    background-color: var(--white);
+
+    h1{
+        color: var(--nightBlue);
+    }
+
+    p{
+        color: var(--grey);
+    }
+
+    #process-container{
+        .process-card{
+            background-color: var(--white);
+            border: 1px solid var(--lilyWhite);
+
+            h3{
+                color: var(--nightBlue);
+            }
+
+            p{
+                color: var(--grey);
+            }
+        }
+    }
+}

@@ -457,3 +457,58 @@ textarea {
   background-color: var(--nightBlue);
   color: var(--white);
 }
+
+/* =============
+    communication
+============= */
+#communication {
+  background-color: var(--white);
+}
+#communication article h1 {
+  color: var(--nightBlue);
+}
+#communication article p {
+  color: var(--grey);
+}
+
+/* =============
+    process
+============= */
+#process {
+  background-color: var(--white);
+}
+#process h1 {
+  color: var(--nightBlue);
+}
+#process p {
+  color: var(--grey);
+}
+#process #process-container .process-card {
+  background-color: var(--white);
+  border: 1px solid var(--lilyWhite);
+}
+#process #process-container .process-card h3 {
+  color: var(--nightBlue);
+}
+#process #process-container .process-card p {
+  color: var(--grey);
+}
+
+/* =============
+    about
+============= */
+#about {
+  background-color: var(--white);
+}
+#about #about-container h1 {
+  color: var(--nightBlue);
+}
+#about p {
+  color: var(--grey);
+}
+#about h2 {
+  color: var(--nightBlue);
+}
+#about p {
+  color: var(--grey);
+}
