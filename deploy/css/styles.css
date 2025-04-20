@@ -316,7 +316,6 @@ template {
 :root {
   --black: #000000;
   --white: #ffffff;
-  --white80: #ffffff33;
   --Ghost: #F0FAFF;
   --lilyWhite: #ECF9FF;
   --snowdrop: #F9FDFF;
@@ -435,4 +434,26 @@ textarea {
 }
 #packages #package-card-container .selected {
   background-color: var(--white);
+}
+
+/* =============
+    newsletter
+============= */
+#newsletter {
+  background-color: var(--lilyWhite);
+}
+#newsletter h1 {
+  color: var(--nightBlue);
+}
+#newsletter p {
+  color: var(--grey);
+}
+#newsletter form input {
+  border: none;
+  color: var(--grey);
+}
+#newsletter form button {
+  border: none;
+  background-color: var(--nightBlue);
+  color: var(--white);
 }
