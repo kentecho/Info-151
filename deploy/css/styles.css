@@ -582,9 +582,14 @@ textarea {
 ============= */
 #communication {
   background-color: var(--white);
+  padding: 107px 24px 300px;
 }
 #communication article p {
   color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin-top: 24px;
+  margin-bottom: 48px;
 }
 
 /* =============
@@ -592,9 +597,14 @@ textarea {
 ============= */
 #process {
   background-color: var(--white);
+  padding: 100px 24px;
 }
 #process p {
   color: var(--grey);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin: 12px 24px 24px;
 }
 #process #process-container .process-card {
   background-color: var(--white);
@@ -602,6 +612,8 @@ textarea {
 }
 #process #process-container .process-card h3 {
   color: var(--nightBlue);
+  margin-bottom: 10px;
+  margin-top: 50px;
 }
 #process #process-container .process-card p {
   color: var(--grey);
@@ -612,13 +624,21 @@ textarea {
 ============= */
 #about {
   background-color: var(--white);
+  padding: 60px 24px;
 }
 #about #about-container p {
   color: var(--grey);
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin: 16px 0px;
 }
 #about h2 {
   color: var(--nightBlue);
+  margin-top: 16px;
 }
 #about p {
   color: var(--grey);
+  margin-top: 16px;
+  margin-left: 98.89px;
 }
