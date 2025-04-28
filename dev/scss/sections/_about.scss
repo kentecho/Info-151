@@ -4,13 +4,40 @@
 @use "../helpers";
 
 #about{
+
     background-color: var(--white);
     padding: 60px 24px;
 
-    #about-container
-        // h1{
-        //     color: var(--nightBlue);
-        // }
+    #about-content{
+        background-color: var(--white);
+        padding: 60px 16px;
+        
+        @include helpers.md{
+            padding: 60px 20vw;
+        }
+
+        @include helpers.lg{
+            display: grid;
+            grid-template-columns: 60% auto;
+            padding: 0px 0%;
+            gap: 60px;
+        }
+
+        @include helpers.xl{
+            grid-template-columns: 65% auto;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+    #about-container{
+        @include helpers.lg{
+            padding: 60px 0px 60px 60px;
+        }
+    
+        h1{
+            color: var(--nightBlue);
+        }
+
         p{
             color: var(--grey);
             color: var(--grey);
@@ -28,4 +55,23 @@
             margin-top: 16px;
             margin-left: 98.89px;
         }
+    }
+
+    aside{
+        // week 4 code
+        display: none;
+
+        @include helpers.lg{
+            display: block;
+            margin-top: 50px;
+        }
+
+        img{
+            height: 100%;
+            width: 200%;
+        }
+     }
+        
+    
+    }
 }

@@ -7,19 +7,43 @@
     background-color: var(--white);
     padding: 100px 24px;
 
-    // h1{
-    //     color: var(--nightBlue);
-    // }
-
-    p{
-        color: var(--grey);
-        font-weight: 600;
-        font-size: helpers.rem-calc(20);
-        line-height: helpers.rem-calc(28);
-        margin: 12px 24px 24px
+    #top-contents{
+        text-align: center;
+        
+        h1{
+            color: var(--nightBlue);
+            }
+        #process-paragraph-container{
+            p{
+                color: var(--grey);
+                font-weight: 600;
+                font-size: helpers.rem-calc(20);
+                line-height: helpers.rem-calc(28);
+                margin: 12px 24px 24px
+        
+                    
+            }
+        }
     }
-
+    
     #process-container{
+
+        @include helpers.md{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr) ;
+            grid-template-areas: "c1 c1 c2 c2"
+                                 "... c3 c3 ...";
+        }
+
+        @include helpers.xl{
+            max-width: 1200px;
+            margin: 0 auto;
+            grid-template-columns: repeat(3, 1fr) ;
+            grid-template-areas: "c1 c2 c3";
+            gap: 45px;
+                      
+        }
+
         .process-card{
             background-color: var(--white);
             border: 1px solid var(--lilyWhite);
@@ -33,7 +57,26 @@
 
             p{
                 color: var(--grey);
+                margin-bottom: 54px;
             }
         }
+
+        #c1{
+            @include helpers.md{
+                grid-area: c1;
+            }
+        }
+
+        #c2{
+            @include helpers.md{
+                grid-area: c2;
+            }
+        }
+
+         #c3{
+            @include helpers.md{
+                grid-area: c3;
+            }  
+        }  
     }
 }
