@@ -692,3 +692,118 @@ textarea {
     font-weight: 700;
   }
 }
+
+/* =============
+    cssGrid
+============= */
+#cssGrid {
+  height: 100vh;
+  background-color: var(--black);
+}
+#cssGrid ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (30vh)[2];
+  grid-template-rows: repeat(2, 30vh);
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--white);
+      grid-template-areas: "b3 b1" "b4 b2";
+}
+@media (min-width: 768px) {
+  #cssGrid ul {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "b3 b1 b1 b2" "b3 b4 b4 b2";
+  }
+}
+@media (min-width: 1200px) {
+  #cssGrid ul {
+        grid-template-areas: "b3 b4 b1 b2" "b3 b4 b1 b2";
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+#cssGrid ul li {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#cssGrid ul #orange {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  background-color: orange;
+  grid-area: b1;
+}
+#cssGrid ul #pink {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  background-color: pink;
+  grid-area: b2;
+}
+#cssGrid ul #blue {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  background-color: blue;
+  grid-area: b3;
+}
+#cssGrid ul #green {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  background-color: green;
+  grid-area: b4;
+}
+@media (min-width: 768px) {
+  #cssGrid ul #orange {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+  }
+  #cssGrid ul #pink {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+  }
+  #cssGrid ul #blue {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+  #cssGrid ul #green {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+  }
+}
+@media (min-width: 1200px) {
+  #cssGrid ul #orange {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+  #cssGrid ul #pink {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+  }
+  #cssGrid ul #blue {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+  #cssGrid ul #green {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+}
