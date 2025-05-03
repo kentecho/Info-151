@@ -5,7 +5,6 @@
 
 #about{
     padding: 40px 24px;
-    background-color: var(--white);
 
         @include helpers.lg{
             display: grid;
@@ -20,9 +19,8 @@
     section{
         .about-p{
             margin: 24px 0 40px;
-            color: var(--grey);
         }
-
+        
         ul{
 
             @include helpers.md{
@@ -35,17 +33,13 @@
                 grid-template-columns: 1fr;
             }
 
-            p{
-                color: var(--grey);
-            }
-
             li{
-                h2{
-                    color: var(--nightBlue);
-                    font-size: helpers.rem-calc(20);
-                    font-weight: 600;
-                    margin-bottom: 8px;
-                }
+              h2{
+                color: var(--nightBlue);
+                font-size: helpers.rem-calc(20);
+                font-weight: 600;
+                margin-bottom: 8px;
+              }
             }
         }
 
