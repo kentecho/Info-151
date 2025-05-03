@@ -375,6 +375,12 @@ body {
   line-height: 4.0625rem;
 }
 
+.body-grey-text {
+  line-height: 1.25rem;
+  color: var(--grey);
+  font-weight: 600;
+}
+
 /* =============
     Buttons
 ============= */
@@ -496,7 +502,19 @@ textarea {
   padding: 24px 20px;
   border-radius: 12px;
 }
-#hero #hero-content-container section #hero-card h5 {
+#hero #hero-content-container section #hero-card #stats-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#hero #hero-content-container section #hero-card #stats-bar #star-icon {
+  margin-left: auto;
+  margin-right: 3px;
+}
+#hero #hero-content-container section #hero-card #stats-bar h5 {
   color: var(--nightBlue);
   font-weight: 600;
   font-size: 0.875rem;
@@ -504,6 +522,8 @@ textarea {
 #hero #hero-content-container section #hero-card p {
   font-size: 0.875rem;
   font-weight: 600;
+  color: var(--grey);
+  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   #hero #hero-content-container aside {
