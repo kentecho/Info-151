@@ -1053,7 +1053,7 @@ textarea {
   margin: 24px 0 40px;
 }
 @media (min-width: 768px) {
-  #about section ul {
+  #about section #shield-safe-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 50% 16px auto;
@@ -1062,12 +1062,23 @@ textarea {
   }
 }
 @media (min-width: 992px) {
-  #about section ul {
+  #about section #shield-safe-container {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 }
-#about section ul li h2 {
+#about section #shield-safe-container .green-list-item .shield-to-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#about section #shield-safe-container .green-list-item .shield-to-text #shield-icon {
+  margin-left: auto;
+}
+#about section #shield-safe-container h2 {
   color: var(--nightBlue);
   font-size: 1.25rem;
   font-weight: 600;
