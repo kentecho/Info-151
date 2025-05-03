@@ -4,74 +4,55 @@
 @use "../helpers";
 
 #about{
-
+    padding: 40px 24px;
     background-color: var(--white);
-    padding: 60px 24px;
-
-    #about-content{
-        background-color: var(--white);
-        padding: 60px 16px;
-        
-        @include helpers.md{
-            padding: 60px 20vw;
-        }
 
         @include helpers.lg{
             display: grid;
-            grid-template-columns: 60% auto;
-            padding: 0px 0%;
-            gap: 60px;
+            grid-template-columns: 50% auto;
         }
-
+        
         @include helpers.xl{
-            grid-template-columns: 65% auto;
             width: 1200px;
             margin: 0 auto;
         }
 
-    #about-container{
-        @include helpers.lg{
-            padding: 60px 0px 60px 60px;
-        }
-    
-        h1{
-            color: var(--nightBlue);
+    section{
+        .about-p{
+            margin: 24px 0 40px;
+            color: var(--grey);
         }
 
-        p{
-            color: var(--grey);
-            color: var(--grey);
-            font-weight: 600;
-            line-height: helpers.rem-calc(28);
-            margin: 16px 0px;
+        ul{
+
+            @include helpers.md{
+                display: grid;
+                grid-template-columns: 50% auto;
+                gap: 16px;
+            }
+
+            @include helpers.lg{
+                grid-template-columns: 1fr;
+            }
+
+            p{
+                color: var(--grey);
+            }
+
+            li{
+                h2{
+                    color: var(--nightBlue);
+                    font-size: helpers.rem-calc(20);
+                    font-weight: 600;
+                    margin-bottom: 8px;
+                }
+            }
         }
-        h2{
-            color: var(--nightBlue);
-            margin-top: 16px;
-        }
-    
-        p{
-            color: var(--grey);
-            margin-top: 16px;
-            margin-left: 98.89px;
-        }
-    }
 
     aside{
-        // week 4 code
-        display: none;
-
-        @include helpers.lg{
-            display: block;
-            margin-top: 50px;
+            margin-top: 68px;
         }
-
-        img{
-            height: 100%;
-            width: 200%;
-        }
-     }
-        
+    } 
     
-    }
+    
 }

@@ -887,72 +887,53 @@ textarea {
     about
 ============= */
 #about {
+  padding: 40px 24px;
   background-color: var(--white);
-  padding: 60px 24px;
-}
-#about #about-content {
-  background-color: var(--white);
-  padding: 60px 16px;
-}
-@media (min-width: 768px) {
-  #about #about-content {
-    padding: 60px 20vw;
-  }
 }
 @media (min-width: 992px) {
-  #about #about-content {
+  #about {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 60% 60px auto;
-    grid-template-columns: 60% auto;
-    padding: 0px 0%;
-    gap: 60px;
+    -ms-grid-columns: 50% auto;
+    grid-template-columns: 50% auto;
   }
 }
 @media (min-width: 1200px) {
-  #about #about-content {
-    -ms-grid-columns: 65% auto;
-    grid-template-columns: 65% auto;
+  #about {
     width: 1200px;
     margin: 0 auto;
   }
 }
-@media (min-width: 992px) {
-  #about #about-content #about-container {
-    padding: 60px 0px 60px 60px;
+#about section .about-p {
+  margin: 24px 0 40px;
+  color: var(--grey);
+}
+@media (min-width: 768px) {
+  #about section ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 16px auto;
+    grid-template-columns: 50% auto;
+    gap: 16px;
   }
 }
-#about #about-content #about-container h1 {
-  color: var(--nightBlue);
+@media (min-width: 992px) {
+  #about section ul {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
-#about #about-content #about-container p {
+#about section ul p {
   color: var(--grey);
-  color: var(--grey);
+}
+#about section ul li h2 {
+  color: var(--nightBlue);
+  font-size: 1.25rem;
   font-weight: 600;
-  line-height: 1.75rem;
-  margin: 16px 0px;
+  margin-bottom: 8px;
 }
-#about #about-content #about-container h2 {
-  color: var(--nightBlue);
-  margin-top: 16px;
-}
-#about #about-content #about-container p {
-  color: var(--grey);
-  margin-top: 16px;
-  margin-left: 98.89px;
-}
-#about #about-content aside {
-  display: none;
-}
-@media (min-width: 992px) {
-  #about #about-content aside {
-    display: block;
-    margin-top: 50px;
-  }
-}
-#about #about-content aside img {
-  height: 100%;
-  width: 200%;
+#about section aside {
+  margin-top: 68px;
 }
 
 /* =============
