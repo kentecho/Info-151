@@ -754,19 +754,31 @@ textarea {
     communication
 ============= */
 #communication {
+  text-align: center;
   background-color: var(--white);
-  padding: 107px 338px 664px;
 }
-#communication article h1 {
+@media (min-width: 992px) {
+  #communication #comms-content {
+    width: 992px;
+    margin: 0 auto;
+  }
+}
+#communication #comms-content h1 {
   color: var(--nightBlue);
-  padding: 0px 164px 20px 300px;
+  text-align: center;
 }
-#communication article p {
+#communication #comms-content p {
   color: var(--grey);
   font-weight: 600;
   line-height: 1.75rem;
   margin-top: 24px;
   margin-bottom: 48px;
+}
+@media (min-width: 1200px) {
+  #communication #comms-img {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 /* =============
