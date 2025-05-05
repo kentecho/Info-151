@@ -3,60 +3,44 @@
 ============= */
 @use "../helpers";
 
-#about{
-    padding:40px 24px;
+#about {
+    padding: 40px 24px;
 
-    @include helpers.lg{
-        display: grid;
-        grid-template-columns: 50% auto;
-    }
-        
-    @include helpers.xl{
-        width: 1200px;
-        margin: 0 auto;
-    }
+    section {
 
-    section{
-        .about-p{
+        .about-p {
             margin: 24px 0 40px;
         }
-        
-        #shield-safe-container{
 
-            @include helpers.md{
+        #shield-safe-container {
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            .list-item {
                 display: grid;
-                grid-template-columns: 50% auto;
+                grid-template-columns: 17.5% auto;
                 gap: 16px;
-            }
 
-            @include helpers.lg{
-                grid-template-columns: 1fr;
-            }
-
-            .green-list-item{
-
-                .shield-to-text{
+                @include helpers.sm {
                     display: flex;
-                    align-items: center;
+                    flex-direction: row;
+                } 
 
-                    #shield-icon{
-                        margin-left: auto;
-                    }
-                }
+                margin-bottom: 30px;
             }
-                h2{
-                    color: var(--nightBlue);
-                    font-size: helpers.rem-calc(20);
-                    font-weight: 600;
-                    margin-bottom: 8px;
-                }
+
+            h2 {
+                color: var(--nightBlue);
+                font-size: helpers.rem-calc(20);
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
         }
     }
 
-    aside{
+    aside {
         margin-top: 68px;
     }
-} 
-    
-    
-
+}

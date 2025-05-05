@@ -1035,48 +1035,39 @@ textarea {
 #about {
   padding: 40px 24px;
 }
-@media (min-width: 992px) {
-  #about {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 50% auto;
-    grid-template-columns: 50% auto;
-  }
-}
-@media (min-width: 1200px) {
-  #about {
-    width: 1200px;
-    margin: 0 auto;
-  }
-}
 #about section .about-p {
   margin: 24px 0 40px;
 }
-@media (min-width: 768px) {
-  #about section #shield-safe-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 50% 16px auto;
-    grid-template-columns: 50% auto;
-    gap: 16px;
-  }
-}
-@media (min-width: 992px) {
-  #about section #shield-safe-container {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-}
-#about section #shield-safe-container .green-list-item .shield-to-text {
+#about section #shield-safe-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-#about section #shield-safe-container .green-list-item .shield-to-text #shield-icon {
-  margin-left: auto;
+#about section #shield-safe-container .list-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 17.5% 16px auto;
+  grid-template-columns: 17.5% auto;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+@media (min-width: 576px) {
+  #about section #shield-safe-container .list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 #about section #shield-safe-container h2 {
   color: var(--nightBlue);
