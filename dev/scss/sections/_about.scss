@@ -6,6 +6,23 @@
 #about {
     padding: 40px 24px;
 
+    
+    @include helpers.md {
+        grid-template-columns: 17.5% auto;
+        gap: 16px;
+    }
+
+    @include helpers.lg {
+        display: grid;
+        grid-template-columns: 50% auto;
+        margin: 0 auto;
+    }
+
+    @include helpers.xl {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
     section {
 
         .about-p {
@@ -41,6 +58,6 @@
     }
 
     aside {
-        margin-top: 68px;
+        margin-top: -20px;
     }
 }
